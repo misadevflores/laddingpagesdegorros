@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Source+Sans+Pro&display=swap');
+body{
+ background: #FEFCFF;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+img{
+  max-width: 100%;
+  min-width: 100%;
+}
+/* header con flex */
+.header{
+    width: 100%;
+    background: #242132;
+    color: #FEFCFF;
+    display: flex;
+}
+.logo{
+    width: 300px;
+}
+.logo p{
+ font-size: 30px;
+ text-align: right;
+ padding: 0px;
+ margin:10px;
+}
+.menu{
+ display: inline-flex;
+}
+.menu li{
+    padding:10px;
+    margin: 5px;
+    background: #FEFCFF;
+    list-style: none;
+    display: inline-block;
+}
+.menu li a{
+    color: #242132;
+    text-decoration: none;
+}
+/* Jumbotron  con  grip*/
+.flex-container{
+    padding: 20px;
+    display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+    background:#746CFE;
+}
+.flex-container div{
+    width: 45%;
+    padding: 30px;
+    margin: 10px;
+}
+
+.titulos{
+
+}
+/* Catalogo o Blog con Flex */
+.gorros{
+    padding: 10px;
+    margin: 10px;
+    align-content: center;
+    width: 100%;
+}
+.gorros article{
+  display: flex;
+  flex-wrap: wrap;
+}
+.gorros article >  div{
+    width: 260px;
+    height: 350x;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius:10px;
+    margin: 10px;
+}
+
+/* footer con Grip */
+footer{
+  background: #242132;
+  padding: 20px;
+  color: #fff;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+footer ul{
+  display: inline-grid;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px, rgba(0, 0, 0, 0.2) 0px 2px 0px;
+  padding: 20px;
+  margin: 10px;
+  width: 23%;
+}
+footer ul li{
+  list-style: none;
+  line-height:1.9;
+  cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+    text-align:left;
+    font-weight: 500;
+      background: #ae8cfa;
+      margin: 5px;
+      color: #262626;
+}
+footer ul li:hover{
+  background: #FEFCFF;
+  padding: 6px;
+}
+footer  p{
+  text-align:center;
+  justify-content: center;
+}
