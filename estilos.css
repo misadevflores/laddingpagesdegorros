@@ -3,7 +3,7 @@ body{
  background: #FEFCFF;
     margin: 0;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: 'Barlow', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -54,18 +54,23 @@ img{
     margin: 10px;
 }
 
+
+/* Catalogo o Blog con Flex */
 .titulos{
+   width: 90%;
+   margin: 10px;
+   text-align: center;
+   justify-content: center;
 
 }
-/* Catalogo o Blog con Flex */
 .gorros{
-    padding: 10px;
-    margin: 10px;
-    align-content: center;
     width: 100%;
+    border-top:4px solid rgb(174, 140, 250,0.8);
+    border-bottom:4px solid rgb(174, 140, 250,0.8);
 }
 .gorros article{
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .gorros article >  div{
@@ -75,7 +80,20 @@ img{
     border-radius:10px;
     margin: 10px;
 }
+/* addicionales usando grip */
+.adicionales{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #ae8cfa;
+  border-radius: 3px;
 
+}
+.adicionales article{
+  padding: 20px;
+  margin: 10px;
+}
+/* fin de adiciones */
 /* footer con Grip */
 footer{
   background: #242132;
@@ -97,15 +115,15 @@ footer ul li{
   line-height:1.9;
   cursor: pointer;
     padding: 6px;
-    border-radius: 8px;
+
     text-align:left;
     font-weight: 500;
-      background: #ae8cfa;
-      margin: 5px;
-      color: #262626;
+    border-top:2px solid rgb(174, 140, 250,0.8);
+    margin: 5px;
+
 }
 footer ul li:hover{
-  background: #FEFCFF;
+  border:2px solid rgb(174, 140, 250,0.8);
   padding: 6px;
 }
 footer  p{
